@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/image_story"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/text_story_title"
+        style="@style/TextAppearance.FavoriteStoryCard.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_story"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        tools:text="Чай со льдом и примьер министр" />
+
+    <ImageView
+        android:id="@+id/image_watched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/ic_watched"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/story_card_height"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_story_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:background="@drawable/ic_placeholder"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            android:alpha="0.5"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:id="@+id/layout_story_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/image_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_favorite_filled"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/image_watched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_watched"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_story_title"
+            style="@style/TextAppearance.StoryCard.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@id/layout_story_state"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Чай со льдом" />
+
+        <TextView
+            android:id="@+id/text_story_description"
+            style="@style/TextAppearance.StoryCard.Description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/text_story_title"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/layout_story_state"
+            android:maxLines="2"
+            tools:text="Две девушки обедали. Обе заказали чай со льдом. Одна девушка выпила чай очень быстро" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

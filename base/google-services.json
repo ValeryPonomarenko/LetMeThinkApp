@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "776421036228",
+    "firebase_url": "https://vponomarenko-letmethink.firebaseio.com",
+    "project_id": "vponomarenko-letmethink",
+    "storage_bucket": "vponomarenko-letmethink.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776421036228:android:e7afdcf98fbf46b5",
+        "android_client_info": {
+          "package_name": "me.vponomarenko.letmethink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776421036228-lfl37ik33v94u8qjftgvso6if5dbg3pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.vponomarenko.letmethink",
+            "certificate_hash": "c987cf64f1f82ec755cd8e35fd15104db9a0199e"
+          }
+        },
+        {
+          "client_id": "776421036228-qqhc6oe0rbuhm57sk5mgqmsiji8cmrns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.vponomarenko.letmethink",
+            "certificate_hash": "240153d462a201e1bde58332d1d1fffadcb0aea0"
+          }
+        },
+        {
+          "client_id": "776421036228-caitv51ktbrhan21932180b2c9f29tdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDedcFOG0pBXAp4MvAYuvXDv1l_2lQL1xE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776421036228-caitv51ktbrhan21932180b2c9f29tdq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-6280003092013625~8517188775"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776421036228:android:f40ff7e64142987c",
+        "android_client_info": {
+          "package_name": "me.vponomarenko.letmethink.base"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776421036228-caitv51ktbrhan21932180b2c9f29tdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDedcFOG0pBXAp4MvAYuvXDv1l_2lQL1xE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

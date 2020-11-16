@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="fix_app_bar_layout_behavior">me.vponomarenko.letmethink.utils.behavior.FixAppBarLayoutBehavior</string>
+
+</resources>

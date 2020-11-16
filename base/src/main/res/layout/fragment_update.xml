@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:title="Update" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/image_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_download_stories"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_update_hint"
+        style="@style/TextAppearance.Hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_update"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="@string/update_hint" />
+
+    <Button
+        android:id="@+id/button_update"
+        style="@style/Button.Borderless.Colored.Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_update_hint"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/download" />
+
+    <include
+        layout="@layout/partial_update_progress"
+        android:id="@+id/view_update_progress"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/partial_success"
+        android:id="@+id/view_success"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/partial_error"
+        android:id="@+id/view_error"
+        android:visibility="gone" />
+
+</RelativeLayout>

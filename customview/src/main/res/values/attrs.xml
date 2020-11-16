@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="expandableLabelText" format="string" />
+        <attr name="expandableTextViewText" format="string" />
+    </declare-styleable>
+</resources>

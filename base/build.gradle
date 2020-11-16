@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+androidExtensions {
+    experimental = true
+}
+
+android {
+    compileSdkVersion app.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion app.minSdkVersion
+        targetSdkVersion app.compileSdkVersion
+        versionName app.versionName
+        versionCode getVersionCode(versionName)
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "ADMOB_ID", "\"123\""
+            resValue "string", "admob_story_ad_unit_id", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "admob_rewarded_ad_unit_id", "ca-app-pub-3940256099942544/5224354917"
+            resValue "string", "admob_interstitial_ad_unit_id", "ca-app-pub-3940256099942544/1033173712"
+            resValue "bool", "isInstantApp", "true"
+            ext.enableCrashlytics = false
+        }
+    }
+}
+
+dependencies {
+    implementation project(":core")
+    implementation project(":customview")
+    implementation project(":data")
+    implementation project(":domain")
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.kotlin
+    implementation deps.support.appcompat
+    implementation deps.support.constraint
+    implementation deps.support.recyclerview
+    implementation deps.support.cardview
+    implementation deps.support.design
+    //fix appcompat issue with firebase:ads
+    implementation deps.support.customtabs
+
+    //Dagger
+    implementation deps.dagger.dagger
+    implementation deps.dagger.android
+    implementation deps.dagger.android_support
+    kapt deps.dagger.android_processor
+    kapt deps.dagger.compiler
+
+    //RxJava2
+    implementation deps.rx.rx
+    implementation deps.rx.android
+
+    //ArchitectureComponents
+    implementation deps.arch.lifecycle.runtime
+    implementation deps.arch.lifecycle.extensions
+    kapt deps.arch.lifecycle.compiler
+    implementation deps.arch.persistence.runtime
+    kapt deps.arch.persistence.compiler
+    implementation deps.arch.persistence.rxjava
+
+    //Picasso
+    implementation deps.picasso
+
+    //Cicerone
+    implementation deps.cicerone
+
+    //Firebase
+//    implementation deps.firebase.database
+//    implementation deps.firebase.storage
+//    implementation deps.firebase.ads
+//    implementation deps.firebase.messaging
+
+    //AdapterDelegates
+    implementation deps.adapterdelegates
+
+    //Timber
+    implementation deps.timber
+    
+    //Crashlytics
+//    implementation(deps.crashlytics) {
+//        transitive = true
+//    }
+
+    implementation deps.instantapp
+}
+
+int getVersionCode(versionName) {
+    def (major, minor, patch) = versionName.toLowerCase().tokenize('.')
+
+    (major, minor, patch) = [major, minor, patch].collect{it.toInteger()}
+
+    (major * 1000000) + (minor * 1000) + (patch * 10)
+}
+
+//apply plugin: 'com.google.gms.google-services'

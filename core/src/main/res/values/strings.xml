@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">core</string>
+
+    <string name="sort_by_index_asc">Сначала старые</string>
+    <string name="sort_by_index_desc">Сначала новые</string>
+    <string name="sort_by_watched_asc">Сначала непросмотренные</string>
+    <string name="sort_by_watched_desc">Сначала просмотренные</string>
+
+</resources>

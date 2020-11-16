@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="story_card_height">102dp</dimen>
+    <dimen name="progress_bar_size">100dp</dimen>
+    <dimen name="success_icon_size">100dp</dimen>
+</resources>

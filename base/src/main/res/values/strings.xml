@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Дай-ка подумать</string>
+
+    <!--Splash screen-->
+    <string name="loading_stories">Истории уже летят к Вам из облака.\nОсталось совсем чуть-чуть!</string>
+    <string name="error_network_connection">Отсутствует Интернет соединение</string>
+    <string name="error_something_went_wrong">Упс! Что-то пошло не так.\nПопробовать еще раз?</string>
+    <string name="try_again">Попробовать еще раз</string>
+
+    <!--Main screen-->
+    <string name="title_stories">Истории</string>
+    <string name="title_stories_for_party">Истории для компании</string>
+
+    <!--Stories screen-->
+    <string name="answer">Ответ</string>
+    <string name="other_stories">Другие истории</string>
+    <string name="favorite_stories">Избранное</string>
+
+    <!--Updates screen-->
+    <string name="title_updates">Обновление историй</string>
+    <string name="update_hint">Обновление позволит Вам получить самые последние истории из нашего облака</string>
+    <string name="download">Загрузить!</string>
+    <string name="update_info_progress">Истории уже летят к Вам из облака.\nОсталось совсем чуть-чуть!</string>
+    <string name="stories_were_updated">Истории успешно обновлены</string>
+    <string name="smth_went_wrong">Упс! Что-то пошло не так</string>
+    <string name="ok">Ок</string>
+    <string name="retry">Попробовать снова</string>
+    <string name="close">Закрыть</string>
+    <string name="watch_ad_to_update">Истории будут обновлены после просмотра рекламы</string>
+    <string name="watch">Посмотреть</string>
+    <string name="cancel">Отмена</string>
+    <string name="loading_ad">Идет загрузка рекламы</string>
+
+    <!--Search screen-->
+    <string name="title_search">Поиск</string>
+    <string name="no_result">Ничего не найдено</string>
+
+    <!--Navigation drawer-->
+    <string name="nav_home">Истории</string>
+    <string name="nav_team">Для компании</string>
+    <string name="nav_update">Обновить истории</string>
+    <string name="nav_rate_up">Оценить приложение</string>
+    <string name="nav_version">v. %s</string>
+
+    <!--Actions-->
+    <string name="action_favorite">Нравится</string>
+    <string name="action_search">Поиск</string>
+
+    <!--Push-->
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Update</string>
+    <string name="updates">Обновление</string>
+
+    <!--Rate app-->
+    <string name="wanna_rate_app">Хотите оценить приложение?</string>
+    <string name="yes">Да!</string>
+    <string name="later">Позже</string>
+    <string name="no">Нет</string>
+
+    <!--Install app-->
+    <string name="install_app_title">Установка приложения</string>
+    <string name="wanna_install_app">Хотите установить полную версию приложения?</string>
+
+</resources>

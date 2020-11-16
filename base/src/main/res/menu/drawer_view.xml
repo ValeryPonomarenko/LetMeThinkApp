@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_puzzle"
+            android:checked="true" />
+        <item
+            android:id="@+id/nav_team"
+            android:title="@string/nav_team"
+            android:icon="@drawable/ic_team" />
+        <item
+            android:id="@+id/nav_update_stories"
+            android:title="@string/nav_update"
+            android:icon="@drawable/ic_download" />
+        <item
+            android:id="@+id/nav_rate_up"
+            android:title="@string/nav_rate_up"
+            android:icon="@drawable/ic_like" />
+    </group>
+</menu>

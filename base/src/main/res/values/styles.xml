@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActivityStyle" />
+
+    <!-- Common -->
+    <style name="TextAppearance.Transparent" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="TextAppearance.Label" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlack_60</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+    <style name="TextAppearance.Hint" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@string/font_family_light</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!-- Story card -->
+    <style name="TextAppearance.StoryCard.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextAppearance.StoryCard.Description" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- Story fragment -->
+    <style name="TextAppearance.Story.Title" parent="TextAppearance.StoryCard.Title">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextAppearance.Story.Description" parent="TextAppearance.StoryCard.Description">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!-- Small story card-->
+    <style name="TextAppearance.SmallStoryCard.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@string/font_family_light</item>
+    </style>
+
+    <!-- Favorite story card-->
+    <style name="TextAppearance.FavoriteStoryCard.Title" parent="TextAppearance.SmallStoryCard.Title">
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="TextAppearance.Search" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextAppearance.Toolbar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Drawer.Version" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@string/font_family_light</item>
+    </style>
+
+    <style name="Button.Borderless.Colored.Red" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="Button.Borderless.Colored.Green" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="Button.Borderless.Colored.Black3b" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorBlack_3b</item>
+    </style>
+
+    <style name="ProgressBar.Red" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint" tools:ignore="NewApi">@color/colorRed</item>
+    </style>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorGrey</color>
+    <color name="colorPrimaryDark">@color/colorDarkGrey</color>
+    <color name="colorAccent">@color/colorRed</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_80">#ccffffff</color>
+    <color name="colorWhite_95">#f2ffffff</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack_50">#7f000000</color>
+    <color name="colorBlack_54">#8b000000</color>
+    <color name="colorBlack_60">#9a000000</color>
+
+    <color name="colorDarkGrey">#d1d1d1</color>
+
+    <color name="colorGrey">#F9F9F9</color>
+    <color name="colorGrey_darker">#F3F3F3</color>
+    <color name="colorGrey_logo">#dfe6e9</color>
+
+    <color name="colorGrey_radio_selected">#E6E6E6</color>
+
+    <color name="colorRed">#FF4949</color>
+
+    <color name="colorGreen">#5ad700</color>
+</resources>
